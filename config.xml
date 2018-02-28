@@ -10,7 +10,7 @@
 	<preference name="phonegap-version" value="cli-8.0.0" />
 	
 	<!--<plugin name="amscomp-plugin-barcodescanner" source="npm" />-->
-	<plugin name="phonegap-plugin-barcodescanner" />
+	<plugin spec="https://github.com/bees4honey/mobile_vin_scanner#:/phonegap_vin_scanner_plugin" source="git"  />
 	<!--<plugin name="cordova-plugin-whitelist" />-->
 	
 	
