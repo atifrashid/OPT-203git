@@ -9,7 +9,7 @@
 	
 	<preference name="phonegap-version" value="cli-8.0.0" />
 	
-	<plugin name="amscomp-plugin-barcodescanner" source="npm" />
+	<!--<plugin name="amscomp-plugin-barcodescanner" source="npm" />-->
 	<!--<plugin name="cordova-plugin-whitelist" />-->
 	
 	
