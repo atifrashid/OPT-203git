@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="index,follow" name="robots" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<link href="pics/homescreen.gif" rel="apple-touch-icon" />
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+
+<title>OPT</title>
+
+<!-- start stylesheets-->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
+<link href="css/mobipick.css" type="text/css" rel="stylesheet">
+<link href="css/bootstrap-datepicker.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- end stylesheets-->
+
+<!-- google fonts-->
+
+
+</head>
+<body>
+
+<div id="opt_app" data-role="page" class="backgroung">
+    <div id="enter">
+        <span>
+            <img src="images/logo.png">
+        </span>
+        <div>
+            <span style="color:#FFF !important">
+                <br>
+                <span style="font-size:20px !important;">opticoat.com</span>
+                <br>
+                <br>
+                Warranty Registration
+            </span> 
+         </div>
+    </div>
+</div>
+
+<!-- start login area -->
+<div id="login" data-role="page" class="backgroung">
+    <div id="site-logo"> <img src="images/logo.png"> </div>
+    <article data-role="content">
+        <form id="form_login" method="post" data-ajax="false">
+            <div data-role="fieldcontain" class="ui-hide-label">
+                <label for="txtuser">Email</label>
+                <input type="email" name="txtuser"  id="txtuser" autocomplete="off" class="required" value="" placeholder="Email" title="Valid Email Required"/>
+            </div>
+            <div data-role="fieldcontain" class="ui-hide-label">
+                <label for="txtpassword">Password:</label>
+                <input type="password" name="txtpassword"  id="txtpassword" class="required" autocomplete="off" value="" placeholder="Password" />
+            </div>
+            <input type="button" value="Login" id="btnLogin">
+        </form>	
+    </article>
+    <div id="car">
+         <img src="images/car.png" />
+    </div>
+</div>
+<!-- end login area-->
+
+<!-- start form-->
+<div id="form" data-role="page" class="backgroung">
+	<div class="ui-header ui-bar-b" data-theme="b" data-role="header" role="banner">
+        <h1 class="ui-title space" role="heading" aria-level="1"></h1>
+        <a href="" data-icon="delete" data-theme="b" class="ui-btn-left logout">Logout</a>
+        <a data-theme="b" href="#pagePrivacy" class="ui-btn-right">Privacy</a>
+    </div>
+    <div id="site-logo1" > <img src="images/logo.png" /> </div>
+        <article data-role="content">
+            <form id="formclaim" action="" method="post" data-ajax="false">
+                <h2 id="notification"> </h2>
+                <span class="graytitlea"> CUSTOMER INFORMATION </span>
+                <div data-role="fieldcontain"  class="ui-hide-label">
+                    <label for="first_name" id="fnameLabel" name="fnameLabel">First name*</label>
+                    <input placeholder="First Name"  id="first_name"   autocomplete="off" name="first_name" class="input required"  value="" type="text" title="First Name Required"/>
+                </div>
+                <div data-role="fieldcontain" class="ui-hide-label">
+                    <label for="last_name">Last name*</label>
+                    <input placeholder="Last Name"  id="last_name"  autocomplete="off" name="last_name" class="input required" value="" type="text" title="Last Name Required" />
+                </div>
+                <div data-role="fieldcontain" class="ui-hide-label">
+                    <label for="address">Address*</label>
+                    <input placeholder="Address" type="text"   id="address" autocomplete="off" name="address1" class="input required" value="" title="Address Required"/>
+                </div>
+                <div data-role="fieldcontain" class="ui-hide-label">
+                    <label for="city">TOWN / SUBURB*</label>
+                    <input placeholder="City" type="text" id="city"  autocomplete="off" name="city" class="input required" value="" title="City Required"/>
+                </div>
+                <div data-role="fieldcontain" class="ui-hide-label">
+                    <label id="lblstate" for="state">State *</label>
+                    <select  class="input required" name="state"  id="state" autocomplete="off" style="height:44px;" >
+                        <option value="">State</option>
+                        <option  value="Alabama">Alabama</option>
+                        <option  value="Alaska">Alaska</option>
+                        <option  value="Arizona">Arizona</option>
+                        <option  value="Arkansas">Arkansas</option>
+                        <option  value="California">California</option>
+    
+                        <option  value="Colorado">Colorado</option>
+                        <option  value="Connecticut">Connecticut</option>
+                        <option  value="Delaware">Delaware</option>
+                        <option  value="Dist. of Columbia">Dist. of Columbia</option>
+                        <option  value="Florida">Florida</option>
+                        <option  value="Georgia">Georgia</option>
+                        <option  value="Hawaii">Hawaii</option>
+                        <option  value="Idaho">Idaho</option>
+                        <option  value="Illinois">Illinois</option>
+                        <option  value="Indiana">Indiana</option>
+                        <option  value="Iowa">Iowa</option>
+                        <option  value="Kansas">Kansas</option>
+                        <option  value="Kentucky">Kentucky</option>
+                        <option  value="Louisiana">Louisiana</option>
+                        <option  value="Maine">Maine</option>
+                        <option  value="Maryland">Maryland</option>
+                        <option  value="Massachusetts">Massachusetts</option>
+                        <option  value="Michigan">Michigan</option>
+                        <option  value="Minnesota">Minnesota</option>
+                        <option  value="Mississippi">Mississippi</option>
+                        <option  value="Missouri">Missouri</option>
+                        <option  value="Montana">Montana</option>
+                        <option  value="Nebraska">Nebraska</option>
+                        <option  value="Nevada">Nevada</option>
+                        <option  value="New Hampshire">New Hampshire</option>
+                        <option  value="New Jersey">New Jersey</option>
+                        <option  value="New Mexico">New Mexico</option>
+                        <option  value="New York">New York</option>
+                        <option  value="North Carolina">North Carolina</option>
+                        <option  value="North Dakota">North Dakota</option>
+                        <option  value="Ohio">Ohio</option>
+                        <option  value="Oklahoma">Oklahoma</option>
+                        <option  value="Oregon">Oregon</option>
+                        <option  value="Pennsylvania">Pennsylvania</option>
+                        <option  value="Rhode Island">Rhode Island</option>
+                        <option  value="South Carolina">South Carolina</option>
+                        <option  value="South Dakota">South Dakota</option>
+                        <option  value="Tennessee">Tennessee</option>
+                        <option  value="Texas">Texas</option>
+                        <option  value="Utah">Utah</option>
+                        <option  value="Vermont">Vermont</option>
+                        <option  value="Virginia">Virginia</option>
+                        <option  value="Washington">Washington</option>
+                        <option  value="West Virginia">West Virginia</option>
+                        <option  value="Wisconsin">Wisconsin</option>
+                        <option  value="Wyoming">Wyoming</option>
+                        </select>
+                </div>
+                <div  data-role="fieldcontain" class="ui-hide-label">
+                    <label for="zip">Zip Code</label>
+                    <input placeholder="Zip Code" type="number"  autocomplete="off"  id="zip" name="post_code" class="input required" value="" title="Zip Code Required"/>
+                </div>
+                <div  data-role="fieldcontain"  class="ui-hide-label">
+                    <label for="phone_number">PHONE*</label>
+                    <input placeholder="Phone" type="text"  autocomplete="off"  id="phone_number" name="phone_number" class="input required" value="" title="Phone Number Required"/>
+                </div>
+                <div data-role="fieldcontain" class="ui-hide-label">
+                    <label for="email">Email*</label>
+                    <input placeholder="Email" type="email" autocomplete="off" class="input required" name="dealer_email" id="email" value="" title="Valid Email Required"/>
+                </div>
+                <span class="graytitlea">VEHICLE IDENTIFICATION</span>
+                <div data-role="fieldcontain" class="ui-hide-label">
+                    <label for="vehicle_make">MAKE*</label>
+                    <input placeholder="Make" type="text"  id="vehicle_make" autocomplete="off" name="vehicle_make" class="input required" value="" title="Vehicle Make Required"/>
+                </div>
+                <div data-role="fieldcontain" class="ui-hide-label">
+                    <label for="email">vehicle_year*</label>
+                    <input placeholder="Year" type="number"  id="vehicle_year" autocomplete="off" name="vehicle_year" class="input required" value="" title="Vehicle Year Required"/>
+                </div>
+                <div  data-role="fieldcontain" class="ui-hide-label">
+                    <label for="vehicle_model">MODEL*</label>
+                    <input placeholder="Model" type="text"  class="input required" autocomplete="off" id="vehicle_model" name="vehicle_model" value="" title="Vechile Model Required"/>
+                </div>
+                <div  data-role="fieldcontain" class="ui-hide-label">
+                    <label for="vahicle_color">COLOUR*</label>
+                    <input placeholder="Color" type="text"  name="vahicle_color" autocomplete="off" id="vahicle_color" class="input required" value="" title="Vechile Color Required"/>
+                </div>
+                <div  data-role="fieldcontain" class="ui-hide-label">
+                    <label for="vehicle_registration">REGISTRATION*</label>
+                    <input placeholder="Registration" type="text" id="vehicle_registration" autocomplete="off" name="vehicle_registration" class="input required" value="" title="Vechile Registeration Required"/>
+                    
+                </div>
+                <div  data-role="fieldcontain" class="ui-hide-label input-style">
+                    <label for="vehicle_vin">VIN/Chassis NUMBER*</label>
+                    <fieldset>
+                        <div class="ui-block-a"><input placeholder="VIN/Chassis Number" type="text"  id="vehicle_vin" autocomplete="off" name="vehicle_vin" class="input required" value="" title="Vechile VIN Number Required"/></div>
+                        <div class="ui-block-b"><button id="btnBarcode"><i class="fa fa-barcode"></i></button></div>  
+                    </fieldset>  
+                </div>
+                <div  data-role="fieldcontain"  class="ui-hide-label">
+                    <label for="vehicle_mileage">MILEAGE*</label>
+                    <input placeholder="Mileage" type="number"  name="vehicle_mileage" autocomplete="off" id="vehicle_mileage" class="input required" value="" title="Vechile Mileage Required"/>
+                </div>
+                <span class="graytitlea">APPLICATION DATE</span>
+                <div data-role="fieldcontain" class="ui-hide-label">
+                    <label for="mydate">APPLICATION DATE *</label>
+                    <input placeholder="Application Date" id="date-picker-2" type="text" class="required date-picker form-control" title="Application Date Required"/>
+                    <label for="date-picker-2" class="input-group-addon btn"></label>
+                </div>
+                
+                <span class="graytitlea">Warranty Services</span>
+                <fieldset id="CTG_Services" data-role="controlgroup">
+                   
+               <div id="spCEW">      
+                    <label for="chk_2">Opti-Coat Exterior Warranty</label>
+                    <input type="checkbox" name="warranty[]"  id="chk_2" autocomplete="off"   value="OptiCoat" class="required" title="Opti-Coat Exterior Warranty Required"/>
+                    <div id="tbl_addwarr2" style="display:none">
+                        <input placeholder="Warranty Number"  autocomplete="off" type="text" class="input required warrInput1" name="serial_number" id="serial_number" value="" title="Warranty Number Required"/>
+                        <input type="text" autocomplete="off"  placeholder="Activation Code" id="activation_code" name="activation_code" class="input required warrInput1" value=""  title="Activation Code Required" />
+                        
+                        <input type="text" autocomplete="off"  placeholder="Opti-Coat Pro Lot No" id="opticoat_pro_lot_no" name="opticoat_pro_lot_no" class="input required warrInput1" value=""  title="Lot No Required" />
+                        <input type="text" autocomplete="off"  placeholder="Opti-Coat Pro+ Lot No" id="opticoat_prop_lot_no" name="opticoat_prop_lot_no" class="input required warrInput1" value=""  title="Lot No Required" />
+                                               
+                        <input type="text"  autocomplete="off" id="opticoat_pre_damage"  placeholder="Note pre-exsisting damage" name="opticoat_pre_damage" class="input required warrInput1" title="Damage Required" >
+                        <input type="text" autocomplete="off"  placeholder="Name(s) of authorized installer(s)" id="opticoat_authorized_installer" name="opticoat_authorized_installer" class="input required phone warrInput1" value=""  title="Name Required" />
+                    </div>
+					</div>      
+    
+                   
+              <div id="spCIW">
+                    <label for="chk_1">Opti-Guard Interior Warranty</label>
+                    <input type="checkbox" name="warranty[]"  id="chk_1"  value="Opti-Guard" class="required" />
+                    <div id="tbl_addwarr" style="display:none" title="Opti-Guard Interior Warranty Required">
+                        <input placeholder="Warranty Number"   type="text" id="pcode1" name="pcode1" class="input warrInput required" value="" title="Warranty Number Required"/>
+                        <input type="text"  autocomplete="off"   placeholder="Activation Code" id="pcode2"  name="pcode2" class="input warrInput required" value="" title="Activation Code Required" />
+                        
+                         <input type="text" autocomplete="off"  placeholder="Leather Lot No." id="optiguard_leather_lot_no" name="optiguard_leather_lot_no" class="input required warrInput" value=""  title="Leather Lot No.  Required" />
+                       
+                        <input type="text" autocomplete="off"   placeholder="Note pre-exsisting damage " name="optiguard_pre_damage" id="optiguard_pre_damage" class="input required warrInput" title="Damage Required">
+                        <input type="text" autocomplete="off"   placeholder="Name(s) of authorized installer(s)" id="optiguard_authorized_installer" name="optiguard_authorized_installer"  class="input required phone warrInput"  value=""  title="Name Required" />
+                    </div>
+              </div>                    
+                    
+                    
+    				<div id="spCPG">
+                    <label for="chk_3">Paint-Guard</label>
+                    <input type="checkbox" name="warranty[]"  id="chk_3"  value="Paint-Guard" class="required" />
+                    <div id="tbl_pg" style="display:none" title="Paint-Guard Required">
+                        <input type="text" autocomplete="off"   placeholder="Note pre-exsisting damage" name="paintguard_pre_damage" id="paintguard_pre_damage" class="input required " title="Damage Required">
+                        <input type="text" autocomplete="off"   placeholder="Name(s) of authorized installer(s)" id="paintguard_authorized_installer" name="paintguard_authorized_installer"  class="input required phone "  value=""  title="Name Required" />
+                    </div>
+               </div>     
+                    
+                <div id="spCIC">
+                    <label for="chk_4">Interior Coating </label>
+                    <input type="checkbox" name="warranty[]"  id="chk_4"  value="Interior-Coating" class="required" />
+                    <div id="tbl_ic" style="display:none" title="Interior-Coating Required">
+                        <input type="text" autocomplete="off"   placeholder="Note pre-exsisting damage" name="interior_pre_damage" id="interior_pre_damage" class="input required " title="Damage Required">
+                        <input type="text" autocomplete="off"   placeholder="Name(s) of authorized installer(s)" id="interior_authorized_installer" name="interior_authorized_installer"  class="input required phone "  value=""  title="Name Required" />
+                    </div>
+                </div>   
+                 
+                
+               <div id="spCPPF">      
+                    <label for="chk_5">PPF </label>
+                    <input type="checkbox" name="warranty[]"  id="chk_5"  value="PPF" class="required" />   
+                    <div id="tbl_PPF" style="display:none" title="Paint-Guard Required">
+                    		<span style="">
+									Please select all the sections where PPF applied
+									<img src="images/flatbody.jpg" id="flatbody" usemap="#MapCar" border="0" style="width: 340px; height: 222px" />
+										<map name="MapCar" id="MapCar">
+											<area state="S1" alt="" title="" href="#" coords="106,311,133,303,159,301,158,325,142,332,132,348,127,362,106,364,101,350,89,347,95,328,113,330,117,323,116,330,120,313" shape="poly">
+								 <area state="S2" alt="" title="" href="#" coords="161,301,208,295,202,328,210,367,200,365,185,331,161,325" shape="poly">
+								 <area state="S3" alt="" title="" href="#" coords="205,330,308,328,312,361,212,364,207,346,207,339" shape="poly">
+								 <area state="S4" alt="" title="" href="#" coords="308,329,394,328,380,346,374,363,337,363,313,361,312,346" shape="poly">
+								 <area state="S5" alt="" title="" href="#" coords="283,296,308,295,307,329,207,329,206,313,209,298,237,296,255,296" shape="poly">
+								 <area state="S6" alt="" title="" href="#" coords="312,298,311,329,394,328,404,323,405,308,398,296,364,297,344,297,327,297" shape="poly">
+								 <area state="S7" alt="" title="" href="#" coords="484,328,496,333,496,347,488,351,487,361,472,362,444,362,439,349,434,337,425,327" shape="poly">
+								 <area state="S8" alt="" title="" href="#" coords="398,296,411,297,427,298,443,298,456,297,468,296,487,302,493,309,483,310,482,328,427,329,409,323,403,303" shape="poly">
+								 <area state="S9" alt="" title="" href="#" coords="107,133,101,171,100,193,109,192,111,198,108,203,100,203,101,229,108,267,149,266,148,135" shape="poly">
+								 <area state="S10" alt="" title="" href="#" coords="150,133,208,134,202,165,201,198,201,233,208,264,179,266,151,264" shape="poly">
+								 <area state="S11" alt="" title="" href="#" coords="15,126,24,125,30,118,38,124,38,151,36,178,38,233,37,274,33,278,26,272,18,272,13,265" shape="poly">
+								 <area state="S12" alt="" title="" href="#" coords="36,126,44,122,54,129,55,146,56,166,51,171,51,181,51,196,51,218,52,229,55,234,54,267,52,272,40,272" shape="poly">
+								 <area state="S13" alt="" title="" href="#" coords="70,133,82,267" shape="rect">
+								 <area state="S14" alt="" title="" href="#" coords="542,122,551,119,555,125,564,130,565,142,565,170,567,203,566,233,565,265,559,271,561,270,549,278,542,271" shape="poly">
+								 <area state="S15" alt="" title="" href="#" coords="542,123,531,119,517,129,521,169,519,219,517,271,534,277,543,272" shape="poly">
+								 <area state="S16" alt="" title="" href="#" coords="102,34,128,37,133,56,143,66,152,71,161,73,161,99,145,97,133,95,122,92,106,87,120,87,113,71,92,69,93,52,101,48" shape="poly">
+								 <area state="S17" alt="" title="" href="#" coords="163,75,177,71,187,65,196,45,197,37,211,34,202,71,205,93,210,107,185,101,163,100" shape="poly">
+								 <area state="S18" alt="" title="" href="#" coords="212,38,256,36,311,35,306,70,289,69,265,70,236,70,207,69,207,54" shape="poly">
+								 <area state="S19" alt="" title="" href="#" coords="207,70,309,69,311,101,295,101,282,101,267,101,251,101,240,101,233,102,222,101,212,103,208,81" shape="poly">
+								 <area state="S20" alt="" title="" href="#" coords="314,36,374,37,383,59,392,69,381,70,372,70,357,69,338,69,326,69,308,70" shape="poly">
+
+								 <area state="S21" alt="" title="" href="#" coords="447,37,483,35,489,46,496,49,495,63,491,70,482,68,472,68,462,68,451,69,441,69,428,69" shape="poly">
+								 <area state="S22" alt="" title="" href="#" coords="495,88,481,89,479,71,426,69,417,74,404,72,405,85,401,102,419,101,433,102,440,104,446,102,454,102,464,102,471,101,487,98" shape="poly">
+								 <area state="S23" alt="" title="" href="#" coords="276,148,317,149,316,148,340,148,363,147,384,147,379,167,380,191,380,216,384,250,368,250,276,251,276,226,281,233,306,233,314,225,313,174,305,167,285,167,274,177" shape="poly">
+								 <area state="S24" alt="" title="" href="#" coords="445,159,448,132,447,136,452,135,494,133,497,156,499,185,501,213,497,244,493,266,478,264,469,264,458,265,449,264,452,264,452,266,447,264,446,255,447,249,446,217,446,194" shape="poly">
+								 <area state="S25" alt="" title="" href="#" coords="259,149,274,149,275,252,260,253,255,202" shape="poly">
+								 <area state="S26" shape="poly" coords="310,70,398,71,403,82,399,98,395,103,374,102,351,102,331,101,312,101" href="#"  alt="">
+
+								 </map>
+								 	<strong>Credits for Selected Area : <span id="spArea">0</span></strong>
+								 	<div class="clearfix"></div>
+								</span>
+                    
+                    
+			   		  </div>
+					</div>                            
+                                                                                                    
+                    
+                </fieldset>
+                <div data-role="fieldcontain">
+                    <button data-theme="b" id="submit" type="submit">Submit</button>
+                </div>
+
+        </form>
+     </article>
+
+</div>
+<!-- end form-->
+
+
+<!-- start page error-->
+<div id="pageError" data-role="dialog">
+    <header data-role="header">
+        <h1>Error</h1>
+    </header>
+    <article data-role="content">
+        <p>Invalid Email or Password</p>
+        <a href="#" data-role="button" data-rel="back">ok</a>
+    </article>
+</div>
+<!-- end page error-->
+
+<!-- start page privacy-->
+<div id="pagePrivacy" data-role="page" class="backgroung"  data-theme="a" >
+	<div class="ui-header ui-bar-b" data-theme="b" data-role="header" role="banner">
+        <h1 class="ui-title" role="heading" aria-level="1">Privacy</h1>
+        <a href="#" data-icon="back" data-theme="b" data-rel="back" class="ui-btn-left">Back</a>
+    </div>
+	
+    <article data-role="content">
+        <div id="sp_privacy"></div>
+    </article>
+</div>
+<!-- end page privacy-->
+
+<!-- start message box-->
+<div id="messagebox" data-role="dialog">
+    <article data-role="content">
+        <p></p>
+        <a href="#" data-role="button" data-rel="back">ok</a> 
+    </article>
+</div>
+<!-- end messahge box-->
+
+
+<!-- start scripts -->
+<script type="text/javascript" src="cordova.js"></script> 
+<script src="js/static/jquery-1.11.3.min.js"></script>
+<script src="js/static/bootstrap.min.js"></script>
+<script src="js/static/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/static/mobipick.js"></script>
+<script src="js/login.js"></script>
+<script src="js/static/jquery.validate.js"></script>
+<script src="js/static/bootstrap-datepicker.js"></script>
+<script src="js/static/moment.js"></script>
+<!--<script src="js/jquery.rwdImageMaps.js"></script>-->
+<script src="js/jquery.imagemapster.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<!-- end scripts-->
+
+</body>
+</html>
