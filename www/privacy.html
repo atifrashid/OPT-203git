@@ -40,9 +40,6 @@
             <div class="col-sm-12">
 					<div class="privacy">
 						
-						<button class="btn btn-outline-secondary" id="btnBarcode1" type="button"><i class="fas fa-barcode"></i></button>
-						<button class="btn btn-outline-secondary" id="btnBarcode2" type="button"><i class="fas fa-barcode"></i></button>
-						<button class="btn btn-outline-secondary" id="btnBarcode3" type="button"><i class="fas fa-barcode"></i></button>
 						
 						
 					</div>
@@ -80,7 +77,7 @@ function QRFailure(message) {
 	
 $(document).ready(function () {
 	
-	$('#btnBarcode1').on('click', function (e) {
+	/*$('#btnBarcode1').on('click', function (e) {
 		try{ cordova.plugins.barcodeScanner.scan(QRonSuccess, QRFailure); }catch (err) { alert_error( err, 'Scanner Error'); }
 	});
 	$('#btnBarcode2').on('click', function (e) {
@@ -88,12 +85,12 @@ $(document).ready(function () {
 	});
 	$('#btnBarcode3').on('click', function (e) {
 		try{ cordova.exec(QRonSuccess, QRFailure, 'VinBarScanner', 'scan', []); }catch (err) { alert_error( err, 'Scanner Error'); }
-	});
+	});*/
 	
 	
 	
 
-	/*
+	
 	$.ajax({
 		type: "GET",
 		url: "https://opticoat.com/opt_app/ajax203.php?handler=getCMS&page_id=59",
@@ -108,7 +105,7 @@ $(document).ready(function () {
 		
 		
 	}).fail( ajaxError );
-*/
+
 
 });	
 	

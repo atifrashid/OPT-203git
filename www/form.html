@@ -491,7 +491,7 @@ function QRonSuccess(result) {
 }
 
 function QRFailure(message) {
-	alert_error('Barcode Scanner Failed, please check app permissions.', 'Scanner Error');
+	alert_error('Barcode Scanner Failed, please check app permissions. '+message, 'Scanner Error');
 }	
 	
 async function saveFormDate() {
@@ -566,8 +566,6 @@ $(document).ready(function() {
 	
 	$('#btnBarcode').on('click', function (e) {
 		try {
-			//cordova.plugins.barcodeScanner.scan(QRonSuccess, QRFailure);
-			window.plugins.VINBarcodeScanner.scan(QRonSuccess, QRFailure);
 			cordova.exec(QRonSuccess, QRFailure, 'VinBarScanner', 'scan', []);
 			
 		} catch (err) {
