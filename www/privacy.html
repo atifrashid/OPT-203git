@@ -38,7 +38,12 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-12">
-					<div class="privacy"></div>
+					<div class="privacy">
+						
+						<button class="btn btn-outline-secondary" id="btnBarcode" type="button"><i class="fas fa-barcode"></i></button>
+						
+						
+					</div>
             </div>
           </div>
         </div>
@@ -54,8 +59,35 @@
     <script src="js/scripts.js" type="text/javascript"></script>
 <script>
 
+
+function QRonSuccess(result) {
+
+	if (result.cancelled == true) {
+		return false;
+	}
+	var code = result.text;
+	$('#vehicle_vin').val(code);
+	//alert(code);
+}
+
+function QRFailure(message) {
+	alert_error('Barcode Scanner Failed, please check app permissions.'+message, 'Scanner Error');
+}		
+	
+	
 $(document).ready(function () {
 	
+	$('#btnBarcode').on('click', function (e) {
+		try {
+			//cordova.plugins.barcodeScanner.scan(QRonSuccess, QRFailure);
+			//window.plugins.VINBarcodeScanner.scan(QRonSuccess, QRFailure);
+			cordova.exec(QRonSuccess, QRFailure, 'VinBarScanner', 'scan', []);
+			
+		} catch (err) {
+			alert_error('Barcode Scanner Failed, please check app permissions. ' + err, 'Scanner Error');
+		}
+		e.preventDefault();
+	});
 	
 	$.ajax({
 		type: "GET",
