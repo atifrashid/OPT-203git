@@ -344,13 +344,7 @@ label.error {
 }
 
 
-.formOverlay:before{
-	content: "\f1ce";
-	font-family: fontawesome;
-	
-	-webkit-animation: a 2s infinite linear;
-    animation: a 2s infinite linear;
-	
+.formOverlay i{
 	color: #069bf3 !important;
 	position: absolute;
 	top: 50%;

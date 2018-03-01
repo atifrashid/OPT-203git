@@ -61,7 +61,7 @@ $(document).ready(function () {
 		type: "GET",
 		url: "https://opticoat.com/opt_app/ajax203.php?handler=getCMS&page_id=59",
 		dataType: 'json',
-		beforeSend: function() { $("<div />").addClass("formOverlay ").appendTo('body');   },
+		beforeSend: function() { $('<div class="formOverlay"><i class="tempLoader fa fa-circle-notch fa-spin"></i></div>').appendTo('body');   },
 		complete: function() { $("div.formOverlay").remove(); },
 	}).done(function(data){
 		

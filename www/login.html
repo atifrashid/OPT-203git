@@ -28,10 +28,10 @@
                 </div>
                 <form id="frmLogin" method="post">
                   <div class="form-group">
-                    <input type="email" class="form-control required email" name="txtuser" id="txtuser" >  
+                    <input type="email" class="form-control required email" placeholder="Email" name="txtuser" id="txtuser" >  
                   </div>    
                   <div class="form-group">
-                    <input type="password" class="form-control required" name="txtpassword" id="txtpassword" >  
+                    <input type="password" class="form-control required" name="txtpassword" placeholder="Password" id="txtpassword" >  
                   </div>                                
                   <button type="submit" value="submit" class="btn btn-block btn-send">
                     Login
@@ -84,7 +84,7 @@ $(document).ready(function() {
 					'pass': pass
 				},
 				dataType: 'json',
-				beforeSend: function() { $("<div />").addClass("formOverlay ").appendTo('body');   },
+				beforeSend: function() { $('<div class="formOverlay"><i class="tempLoader fa fa-circle-notch fa-spin"></i></div>').appendTo('body');   },
 				complete: function() { $("div.formOverlay").remove(); },
 			}).done(function(data){
 			

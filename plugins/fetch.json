@@ -1,0 +1,18 @@
+{
+  "cordova-plugin-whitelist": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-whitelist@^1.3.3"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "com.bees4honey.vinscanner": {
+    "source": {
+      "type": "registry",
+      "id": "https://github.com/bees4honey/mobile_vin_scanner_phonegap"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
+}

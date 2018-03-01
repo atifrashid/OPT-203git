@@ -1,0 +1,90 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "https://github.com/bees4honey/mobile_vin_scanner_phonegap",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "https://github.com/bees4honey/mobile_vin_scanner_phonegap",
+        "spec": "git+https://github.com/bees4honey/mobile_vin_scanner_phonegap.git",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:bees4honey/mobile_vin_scanner_phonegap.git",
+          "sshUrl": "git+ssh://git@github.com/bees4honey/mobile_vin_scanner_phonegap.git",
+          "httpsUrl": "git+https://github.com/bees4honey/mobile_vin_scanner_phonegap.git",
+          "gitUrl": "git://github.com/bees4honey/mobile_vin_scanner_phonegap.git",
+          "shortcut": "github:bees4honey/mobile_vin_scanner_phonegap",
+          "directUrl": "https://raw.githubusercontent.com/bees4honey/mobile_vin_scanner_phonegap/master/package.json"
+        }
+      },
+      "D:\\Ampps\\www\\OPT-203git"
+    ]
+  ],
+  "_from": "git+https://github.com/bees4honey/mobile_vin_scanner_phonegap.git",
+  "_id": "com.bees4honey.vinscanner@1.0.0",
+  "_inCache": true,
+  "_location": "/com.bees4honey.vinscanner",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "https://github.com/bees4honey/mobile_vin_scanner_phonegap",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "https://github.com/bees4honey/mobile_vin_scanner_phonegap",
+    "spec": "git+https://github.com/bees4honey/mobile_vin_scanner_phonegap.git",
+    "type": "hosted",
+    "hosted": {
+      "type": "github",
+      "ssh": "git@github.com:bees4honey/mobile_vin_scanner_phonegap.git",
+      "sshUrl": "git+ssh://git@github.com/bees4honey/mobile_vin_scanner_phonegap.git",
+      "httpsUrl": "git+https://github.com/bees4honey/mobile_vin_scanner_phonegap.git",
+      "gitUrl": "git://github.com/bees4honey/mobile_vin_scanner_phonegap.git",
+      "shortcut": "github:bees4honey/mobile_vin_scanner_phonegap",
+      "directUrl": "https://raw.githubusercontent.com/bees4honey/mobile_vin_scanner_phonegap/master/package.json"
+    }
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/bees4honey/mobile_vin_scanner_phonegap.git#37be1bcfbc7a851d0f53f432560c16a034c680cb",
+  "_shasum": "1233c5714e934ee865e9df3f690b9e50f3ba1008",
+  "_shrinkwrap": null,
+  "_spec": "https://github.com/bees4honey/mobile_vin_scanner_phonegap",
+  "_where": "D:\\Ampps\\www\\OPT-203git",
+  "author": {
+    "name": "bees4honey"
+  },
+  "bugs": {
+    "url": "https://github.com/bees4honey/mobile_vin_scanner_phonegap/issues"
+  },
+  "cordova": {
+    "id": "com.bees4honey.vinscanner",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "dependencies": {},
+  "description": "Phonegap plugin for bees4honey VIN scanner SDK",
+  "devDependencies": {},
+  "gitHead": "37be1bcfbc7a851d0f53f432560c16a034c680cb",
+  "homepage": "https://github.com/bees4honey/mobile_vin_scanner_phonegap#readme",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "Paid usage, free trial",
+  "name": "com.bees4honey.vinscanner",
+  "optionalDependencies": {},
+  "readme": "# Phonegap plugin for mobile VIN Scanner \r\n\r\nThis repo contains Phonegap plugin only. If you need VIN Scanner SDK for native development, use https://github.com/bees4honey/mobile_vin_scanner instead.\r\n\r\nThis is repo for Mobile VIN Scanner SDK created and maintained by bees4honey.\r\n\r\n**WARNING:** since VIN Scanner plugin heavily uses native code for both iOS and Android platforms, the Adobe Phonegap Build cloud service is not supported. To use our plugin you need to build project using Phonegap command line tools.\r\n\r\n## Supported platforms\r\n\r\n**iOS:** iOS versions starting with 7.0 are supported.\r\n\r\n**Android:** only Android versions 4.0 and higher are supported. Please make your project min SDK version equal to 14 (Android 4.0) to get scanner working.\r\n\r\n## Phonegap plugin installation\r\n\r\nInstallation instructions:\r\n1. Generate your project using \"phonegap create\" command\r\n2. Add a plugin to your project using the following command:\r\n\r\n```\r\nphonegap plugin add https://github.com/bees4honey/mobile_vin_scanner_phonegap\r\n```\r\n\r\nYou can find usage example in index.html file.\r\n\r\n## Licensing\r\n\r\nYou are free to download any of our projects and use it in development purpose inside your app. \r\n\r\nYou are not allowed to comercialize (that is, sell, rent, trade or lease) Mobile VIN Scanner SDK, \r\nmodify, recompile, reverse engineer or otherwise alter the Mobile VIN Scanner SDK. Please read more about licensing in license_agreement.txt\r\n\r\nWithout License Key SDK will work in demo mode and amount of scans will be limited per install. \r\n\r\n**Please contact us at vin@bees4honey.com for purchasing details.**\r\n\r\nThanks!",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bees4honey/mobile_vin_scanner_phonegap.git"
+  },
+  "version": "1.0.0"
+}
