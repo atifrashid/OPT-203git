@@ -47,5 +47,4 @@
     <allow-navigation href="data:*" />
     <plugin name="cordova-plugin-whitelist" spec="^1.3.3" />
     <plugin name="com.bees4honey.vinscanner" spec="https://github.com/bees4honey/mobile_vin_scanner_phonegap.git" />
-    <!--<engine name="android" spec="~6.3.0" />-->
 </widget>
