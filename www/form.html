@@ -568,7 +568,7 @@ $(document).ready(function() {
 		try {
 			cordova.plugins.barcodeScanner.scan(QRonSuccess, QRFailure);
 		} catch (err) {
-			alert_error('Barcode Scanner Failed, please check app permissions.', 'Scanner Error');
+			alert_error('Barcode Scanner Failed, please check app permissions. ' + err, 'Scanner Error');
 		}
 		e.preventDefault();
 	});
