@@ -40,7 +40,9 @@
             <div class="col-sm-12">
 					<div class="privacy">
 						
-						<button class="btn btn-outline-secondary" id="btnBarcode" type="button"><i class="fas fa-barcode"></i></button>
+						<button class="btn btn-outline-secondary" id="btnBarcode1" type="button"><i class="fas fa-barcode"></i></button>
+						<button class="btn btn-outline-secondary" id="btnBarcode2" type="button"><i class="fas fa-barcode"></i></button>
+						<button class="btn btn-outline-secondary" id="btnBarcode3" type="button"><i class="fas fa-barcode"></i></button>
 						
 						
 					</div>
@@ -53,6 +55,7 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <script src="cordova.js"></script> 
     <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>    
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
     <script src="js/jquery.validate.min.js" type="text/javascript"></script>    
@@ -77,17 +80,19 @@ function QRFailure(message) {
 	
 $(document).ready(function () {
 	
-	$('#btnBarcode').on('click', function (e) {
-		try {
-			//cordova.plugins.barcodeScanner.scan(QRonSuccess, QRFailure);
-			//window.plugins.VINBarcodeScanner.scan(QRonSuccess, QRFailure);
-			cordova.exec(QRonSuccess, QRFailure, 'VinBarScanner', 'scan', []);
-			
-		} catch (err) {
-			alert_error('Barcode Scanner Failed, please check app permissions. ' + err, 'Scanner Error');
-		}
-		e.preventDefault();
+	$('#btnBarcode1').on('click', function (e) {
+		try{ cordova.plugins.barcodeScanner.scan(QRonSuccess, QRFailure); }catch (err) { alert_error( err, 'Scanner Error'); }
 	});
+	$('#btnBarcode2').on('click', function (e) {
+		try{ window.plugins.VINBarcodeScanner.scan(QRonSuccess, QRFailure); }catch (err) { alert_error( err, 'Scanner Error'); }
+	});
+	$('#btnBarcode3').on('click', function (e) {
+		try{ cordova.exec(QRonSuccess, QRFailure, 'VinBarScanner', 'scan', []); }catch (err) { alert_error( err, 'Scanner Error'); }
+	});
+	
+	
+	
+
 	/*
 	$.ajax({
 		type: "GET",
