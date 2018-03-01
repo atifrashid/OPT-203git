@@ -566,7 +566,8 @@ $(document).ready(function() {
 	
 	$('#btnBarcode').on('click', function (e) {
 		try {
-			cordova.plugins.barcodeScanner.scan(QRonSuccess, QRFailure);
+			//cordova.plugins.barcodeScanner.scan(QRonSuccess, QRFailure);
+			window.plugins.VINBarcodeScanner.scan(QRonSuccess, QRFailure);
 		} catch (err) {
 			alert_error('Barcode Scanner Failed, please check app permissions. ' + err, 'Scanner Error');
 		}
