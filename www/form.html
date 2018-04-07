@@ -786,7 +786,7 @@ $(document).ready(function() {
 	
 
 function uploadImageBF() {
-	
+	alert('uploadImageBF');
 	navigator.camera.getPicture(
 	function(uri) {
 		try {
@@ -842,6 +842,7 @@ function uploadImageBF() {
 	},
 
 	function(e) {
+		alert(e);
 		console.log("Error getting picture: " + e);
 		//$('#picture_msg').html(cLan.NoPic);
 	}, {
